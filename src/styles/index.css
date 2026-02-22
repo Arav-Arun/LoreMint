@@ -6,40 +6,40 @@
      ========================================= */
 
   /* Primary Background Colors */
-  --color-bg-primary: #000000;
-  --color-bg-secondary: #0a0a0a;
-  --color-bg-tertiary: #141414;
-  --color-bg-elevated: #1f1f1f;
-  --color-bg-dark: #000000;
+  --color-bg-primary: #2d2640;
+  --color-bg-secondary: #3d3356;
+  --color-bg-tertiary: #4a4363;
+  --color-bg-elevated: #564d70;
+  --color-bg-dark: #1e1a2e;
 
   /* Surface colors - Dark Purple Theme */
-  --color-surface-cream: #141414;
-  --color-surface-lavender: #1f1f1f;
-  --color-surface-card: #0a0a0a;
-  --color-surface-glass: rgba(10, 10, 10, 0.85);
-  --color-surface-glass-dark: rgba(0, 0, 0, 0.95);
-  --color-surface-glass-light: rgba(20, 20, 20, 0.95);
-  --color-surface-overlay: rgba(0, 0, 0, 0.8);
+  --color-surface-cream: #f5f0eb;
+  --color-surface-lavender: #e8e3f3;
+  --color-surface-card: #faf8f6;
+  --color-surface-glass: rgba(61, 51, 86, 0.85);
+  --color-surface-glass-dark: rgba(45, 38, 64, 0.95);
+  --color-surface-glass-light: rgba(245, 240, 235, 0.95);
+  --color-surface-overlay: rgba(45, 38, 64, 0.8);
 
   /* Text hierarchy - High Contrast for Dark Theme */
   --color-text-primary: #ffffff;
-  --color-text-secondary: #e2e2e2;
-  --color-text-tertiary: #a0a0a0;
-  --color-text-muted: #8b8b8b;
-  --color-text-dark: #000000;
-  --color-text-dark-secondary: #1f1f1f;
+  --color-text-secondary: #e2dceb; /* Much lighter lavender/grey */
+  --color-text-tertiary: #b8b2cc; /* Lighter than before */
+  --color-text-muted: #948ea5; /* Visible but clearly muted */
+  --color-text-dark: #2d2640;
+  --color-text-dark-secondary: #564d70;
 
   /* Accent colors - Warm cream/beige */
-  --color-accent-cream: #F9D54C;
-  --color-accent-beige: #EFC71E;
-  --color-accent-gold: #F9D54C;
-  --color-accent-lavender: #F9D54C;
-  --color-accent-soft: rgba(249, 213, 76, 0.15);
-  --color-accent-medium: rgba(249, 213, 76, 0.3);
+  --color-accent-cream: #e8ddd0;
+  --color-accent-beige: #d4c8b8;
+  --color-accent-gold: #c9a962;
+  --color-accent-lavender: #b8a8d9;
+  --color-accent-soft: rgba(232, 221, 208, 0.15);
+  --color-accent-medium: rgba(232, 221, 208, 0.3);
 
   /* ETH/Crypto Colors */
-  --color-eth-primary: #F9D54C;
-  --color-eth-light: #EFC71E;
+  --color-eth-primary: #627eea;
+  --color-eth-light: #8a9fef;
 
   /* Status colors */
   --color-success: #6fcf97;
@@ -51,16 +51,16 @@
   --color-border-subtle: rgba(255, 255, 255, 0.08);
   --color-border-default: rgba(255, 255, 255, 0.12);
   --color-border-strong: rgba(255, 255, 255, 0.2);
-  --color-border-cream: rgba(249, 213, 76, 0.3);
-  --color-border-card: rgba(255, 255, 255, 0.1);
+  --color-border-cream: rgba(232, 221, 208, 0.3);
+  --color-border-card: rgba(45, 38, 64, 0.1);
 
   /* Gradients */
-  --gradient-purple: linear-gradient(135deg, #141414 0%, #000000 100%);
-  --gradient-cream: linear-gradient(135deg, #1f1f1f 0%, #141414 100%);
-  --gradient-card: linear-gradient(145deg, #0a0a0a 0%, #000000 100%);
-  --gradient-eth: linear-gradient(to right, #FECB02, #FF9E39);
-  --gradient-gold: linear-gradient(to right, #FECB02, #FF9E39);
-  --gradient-lavender: linear-gradient(to right, #FECB02, #FF9E39);
+  --gradient-purple: linear-gradient(135deg, #3d3356 0%, #2d2640 100%);
+  --gradient-cream: linear-gradient(135deg, #faf8f6 0%, #f5f0eb 100%);
+  --gradient-card: linear-gradient(145deg, #ffffff 0%, #f5f0eb 100%);
+  --gradient-eth: linear-gradient(135deg, #627eea 0%, #8a9fef 100%);
+  --gradient-gold: linear-gradient(135deg, #c9a962 0%, #e8ddd0 100%);
+  --gradient-lavender: linear-gradient(135deg, #b8a8d9 0%, #e8e3f3 100%);
 
   /* Typography */
   --font-display:
@@ -187,6 +187,9 @@ body {
   line-height: var(--leading-normal);
   color: var(--color-text-primary);
   background-color: var(--color-bg-primary);
+  background-image:
+    radial-gradient(at 0% 0%, rgba(184, 168, 217, 0.08) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(61, 51, 86, 0.15) 0px, transparent 50%);
   background-attachment: fixed;
   min-height: 100vh;
 }
