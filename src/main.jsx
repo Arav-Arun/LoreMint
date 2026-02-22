@@ -17,8 +17,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <QueryClientProvider client={queryClient}>
         <RainbowKitProvider
           theme={darkTheme({
-            accentColor: "#d4a853",
-            accentColorForeground: "white",
+            accentColor: "#F9D54C",
+            accentColorForeground: "black",
             borderRadius: "medium",
             fontStack: "system",
           })}
